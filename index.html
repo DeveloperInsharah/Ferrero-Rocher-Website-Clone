@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERRERO ROCHER | WEBSITE CLONE</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        .navs{
+            font-weight: 600 !important;
+            color: black;
+        }
+        .navs:hover{
+            color: goldenrod;
+        }
+        .navs1:hover::after{
+            content: " ";
+            background-color: goldenrod;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+            left: 110px;
+            top: 65px;
+            animation-name: after1;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes after1 {
+            0%{
+                width: 10px;
+                left: 110px;
+            }
+            10%{
+                width: 10px;
+                left: 110px;
+            }
+            100%{
+                width: 130px;
+                left: 48px;
+            }
+        }
+        .navs2:hover::after{
+            content: " ";
+            background-color: goldenrod;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+            left: 315px;
+            top: 65px;
+            animation-name: after2;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes after2 {
+            0%{
+                width: 10px;
+                left: 300px;
+            }
+            10%{
+                width: 10px;
+                left: 310px;
+            }
+            100%{
+                width: 130px;
+                left: 249px;
+            }
+        }
+        .navs3:hover::after{
+            content: " ";
+            background-color: goldenrod;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+            left: 920px;
+            top: 65px;
+            animation-name: after3;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes after3 {
+            0%{
+                width: 10px;
+                left: 910px;
+            }
+            10%{
+                width: 10px;
+                left: 910px;
+            }
+            100%{
+                width: 210px;
+                left: 812px;
+            }
+        }        
+        .navs4:hover::after{
+            content: " ";
+            background-color: goldenrod;
+            width: 10px;
+            height: 2px;
+            position: absolute;
+            left: 1200px;
+            top: 65px;
+            animation-name: after4;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes after4 {
+            0%{
+                width: 10px;
+                left: 1180px;
+            }
+            10%{
+                width: 10px;
+                left: 1180px;
+            }
+            100%{
+                width: 222px;
+                left: 1080px;
+            }
+        }
+        .h{
+            font-family: "Merriweather", serif;
+        }
+        .list:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .list9:hover{
+          color: #D5AC5B;
+          cursor: pointer;
+        }
+        .button{
+          transition: 0.6s;
+        }
+        .button:hover{
+          transform: scale(1.1);
+        }
+        .card{
+          border: none !important;
+          border-radius: 0px !important;
+        }
+        .card{
+          transition: 0.6s;
+        }
+        .card:hover{
+          cursor: pointer;
+          margin-top: 100px !important;
+          color: rgb(88, 88, 255) !important;
+          margin-bottom: 0px !important;
+        }
+        .before::before{
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: linear-gradient( #4c4c4c00,#00000067,#000000ef);
+          z-index: 1;
+        }
+        .overlay{
+          transition: opacity 0.6s !important;
+        }
+        .main{
+          cursor: pointer;
+        }
+        .main:hover .overlay{
+          opacity:1 !important;
+        }
+        .heading{
+          transition: opacity 0.6s;
+          color: white;
+        }
+        .main:hover .heading{
+          opacity:0 !important;
+        }
+        .page{
+          transition: 0.6s;
+          box-shadow: 2px 2px 8px 8px #d5ac5b97;
+        }
+        .page:hover{
+          cursor: pointer;
+          transform: scale(1.15);
+          box-shadow: 2px 2px 20px 20px #d5ac5b4b;
+        }
+        .list:hover{
+          color: #D5AC5B !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-none d-lg-block d-xl-block d-xxl-block" data-aos="fade-down">
+        <div class="container-fluid d-flex">
+            <li class="text-center d-block d-lg-none d-xl-none d-xxl-none" style="width: 300px !important;"><a class="navbar-brand" href="#"><img src="img/logopng.png" alt="" style="width: 90px;"></a></li>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav  d-flex align-items-center justify-content-around w-100">
+              <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                <a class="nav-link text-uppercase navs navs1" href="#">OUR PRODUCTS</a>
+              </li>
+              <li class="nav-item"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop">
+                <a class="nav-link text-uppercase navs  navs2 d-none d-lg-block d-xl-block d-xxl-block" href="#">TIPS AND IDEAS</a>
+              </li>
+              <li class="text-center" style="width: 300px !important;"><a class="navbar-brand" href="#"><img src="img/logopng.png" alt="" style="width: 90px;"></a></li>
+              <li class="nav-item"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop">
+                <a class="nav-link text-uppercase navs navs3" href="#">About Ferrero Rocher</a>
+              </li>
+              <li class="nav-item"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop4" aria-controls="offcanvasTop">
+                <a class="nav-link text-uppercase navs navs4" href="#">Quality & Sustainability</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="d-block d-lg-none d-xl-none d-xxl-none container-fluid d-flex align-items-center justify-content-between ps-3 pe-3" style="height: 90px;box-shadow: 2px 2px 10px 10px #d5ac5b52;">
+        <img src="img/logopng.png" alt="" class="" style="width: 80px;">
+        <img src="img/menu.png" alt="" style="width: 60px;"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+      </nav>
+
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height: 62vh !important;">
+        <div class="offcanvas-header">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container-fluid d-flex">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav  d-flex align-items-center justify-content-around w-100">
+                      <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                        <a class="nav-link text-uppercase navs" href="#">OUR PRODUCTS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase navs" href="#">TIPS AND IDEAS</a>
+                      </li>
+                      <li class="text-center" style="width: 300px !important;"><a class="navbar-brand" href="#"><img src="img/logopng.png" alt="" style="width: 90px;"></a></li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase navs" href="#">About Ferrero Rocher</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-uppercase navs" href="#">Quality & Sustainability</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="offcanvas-body mb-3">
+         <div class="d-flex w-100 justify-content-around">
+            <img src="img/our-products-menu-large.jpg" alt="" style="width: 300px; height: 200px;">
+            <div class="ps-5" style="width: 300px;color: rgb(117, 59, 46); border-right: 2px solid goldenrod;"><h1 class="h fs-2">Discover Our Products</h1>
+            <p class="pt-5" style="text-decoration: underline;text-decoration-color: goldenrod;font-weight: 600;">See All Products →</p></div>
+            <div class="" style="width: 300px;">
+                <ul style="list-style: none;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                <li class="mt-3 list">Ferrero Rocher</li>
+                <li class="mt-3 list">Chocolate Bars</li>
+                <li class="mt-3 list">Ferrero Rocher Origins</li>
+                <li class="mt-3 list">Ice Creams</li>
+            </ul>
+            </div>
+            <div class="" style="width: 300px;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                <ul style="list-style: none;">
+                <li class="mt-3 list">Travel Companions</li>
+                <li class="mt-3 list">Valentine's Day Specials</li>
+                <li class="mt-3 list">Christmas Specials</li>
+                <li class="mt-3 list">Easter Specials</li>
+            </ul>
+            </div>
+         </div>
+         </div>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop2" aria-labelledby="offcanvasTopLabel" style="height: 62vh !important;">
+            <div class="offcanvas-header">
+                <nav class="navbar navbar-expand-lg w-100">
+                    <div class="container-fluid d-flex">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav  d-flex align-items-center justify-content-around w-100">
+                          <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <a class="nav-link text-uppercase navs" href="#">OUR PRODUCTS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase navs" href="#">TIPS AND IDEAS</a>
+                          </li>
+                          <li class="text-center" style="width: 300px !important;"><a class="navbar-brand" href="#"><img src="img/logopng.png" alt="" style="width: 90px;"></a></li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase navs" href="#">About Ferrero Rocher</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase navs" href="#">Quality & Sustainability</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class="offcanvas-body mb-3">
+             <div class="d-flex w-100 justify-content-around">
+                <img src="img/ti-menu-large.jpg" alt="" style="width: 300px; height: 200px;">
+                <div class="ps-3 pt-3" style="width: 300px;color: rgb(117, 59, 46); border-right: 2px solid goldenrod;"><h1 class="h fs-2">GET INSPIRED</h1>
+                <p class="pt-5" style="text-decoration: underline;text-decoration-color: goldenrod;font-weight: 600;">See All Tips & Ideas →</p></div>
+                <div class="" style="width: 300px;">
+                    <ul style="list-style: none;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                    <li class="mt-3 list">Ferrero Rocher</li>
+                    <li class="mt-3 list">Chocolate Bars</li>
+                    <li class="mt-3 list">Ferrero Rocher Origins</li>
+                    <li class="mt-3 list">Ice Creams</li>
+                </ul>
+                </div>
+                <div class="" style="width: 300px;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                    <ul style="list-style: none;">
+                    <li class="mt-3 list">Travel Companions</li>
+                    <li class="mt-3 list">Valentine's Day Specials</li>
+                    <li class="mt-3 list">Christmas Specials</li>
+                    <li class="mt-3 list">Easter Specials</li>
+                </ul>
+                </div>
+             </div>
+             </div>
+            </div>
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel" style="height: 62vh !important;">
+                <div class="offcanvas-header">
+                    <nav class="navbar navbar-expand-lg w-100">
+                        <div class="container-fluid d-flex">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav  d-flex align-items-center justify-content-around w-100">
+                              <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <a class="nav-link text-uppercase navs" href="#">OUR PRODUCTS</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-uppercase navs" href="#">TIPS AND IDEAS</a>
+                              </li>
+                              <li class="text-center" style="width: 300px !important;"><a class="navbar-brand" href="#"><img src="img/logopng.png" alt="" style="width: 90px;"></a></li>
+                              <li class="nav-item">
+                                <a class="nav-link text-uppercase navs" href="#">About Ferrero Rocher</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-uppercase navs" href="#">Quality & Sustainability</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="offcanvas-body mb-3">
+                 <div class="d-flex w-100 justify-content-around">
+                    <img src="img/about-ferrero-menu-large.jpg" alt="" style="width: 300px; height: 200px;">
+                    <div class="ps-3 pt-3" style="width: 300px;color: rgb(117, 59, 46); border-right: 2px solid goldenrod;"><h1 class="h fs-2">Discover Ferrero Rocher</h1>
+                    <p class="pt-5" style="text-decoration: underline;text-decoration-color: goldenrod;font-weight: 600;">See All About Ferrero Rocher →</p></div>
+                    <div class="" style="width: 300px;">
+                        <ul style="list-style: none;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                        <li class="mt-3 list">Ferrero Rocher</li>
+                        <li class="mt-3 list">Chocolate Bars</li>
+                        <li class="mt-3 list">Ferrero Rocher Origins</li>
+                        <li class="mt-3 list">Ice Creams</li>
+                    </ul>
+                    </div>
+                    <div class="" style="width: 300px;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                        <ul style="list-style: none;">
+                        <li class="mt-3 list">Travel Companions</li>
+                        <li class="mt-3 list">Valentine's Day Specials</li>
+                        <li class="mt-3 list">Christmas Specials</li>
+                        <li class="mt-3 list">Easter Specials</li>
+                    </ul>
+                    </div>
+                 </div>
+                 </div>
+                </div>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop4" aria-labelledby="offcanvasTopLabel" style="height: 62vh !important;">
+                    <div class="offcanvas-header">
+                        <nav class="navbar navbar-expand-lg w-100">
+                            <div class="container-fluid d-flex">
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav  d-flex align-items-center justify-content-around w-100">
+                                  <li class="nav-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                    <a class="nav-link text-uppercase navs" href="#">OUR PRODUCTS</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-uppercase navs" href="#">TIPS AND IDEAS</a>
+                                  </li>
+                                  <li class="text-center" style="width: 300px !important;"><a class="navbar-brand" href="#"><img src="img/logopng.png" alt="" style="width: 90px;"></a></li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-uppercase navs" href="#">About Ferrero Rocher</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link text-uppercase navs" href="#">Quality & Sustainability</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                    <div class="offcanvas-body mb-3">
+                     <div class="d-flex w-100 justify-content-around">
+                        <img src="img/qs_home_1.jpg" alt="" style="width: 300px; height: 200px;">
+                        <div class="ps-3 pe-3" style="width: 300px;color: rgb(117, 59, 46); border-right: 2px solid goldenrod;"><h1 class="h fs-2">Learn more about Quality & Sustainability</h1>
+                        <p class="pt-5" style="text-decoration: underline;text-decoration-color: goldenrod;font-weight: 600;">See all Quality & Sustainability →</p></div>
+                        <div class="" style="width: 300px;">
+                            <ul style="list-style: none;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                            <li class="mt-3 list">Ferrero Rocher</li>
+                            <li class="mt-3 list">Chocolate Bars</li>
+                            <li class="mt-3 list">Ferrero Rocher Origins</li>
+                            <li class="mt-3 list">Ice Creams</li>
+                        </ul>
+                        </div>
+                        <div class="" style="width: 300px;color: rgb(117, 59, 46) !important;font-weight: 600 !important;">
+                            <ul style="list-style: none;">
+                            <li class="mt-3 list">Travel Companions</li>
+                            <li class="mt-3 list">Valentine's Day Specials</li>
+                            <li class="mt-3 list">Christmas Specials</li>
+                            <li class="mt-3 list">Easter Specials</li>
+                        </ul>
+                        </div>
+                     </div>
+                     </div>
+                    </div>
+      <div class="container-fluid border mb-5 mt-2 p-5 d-none d-lg-block d-xl-block d-xxl-block" style="height: 75vh;background-color: #f3eddb;box-shadow: 2px 2px 10px 10px #d5ac5bb5; !important" data-aos="fade-up-right">
+          <div class="container h-100 d-flex " style="border: 2px solid #D5AC5B;font-weight: 500 !important;">
+            <div class="text w-50  ps-5 pt-3" style="z-index: 2;">
+            <h1 class="w-50 h" style="font-size: 3.8rem;color: #D5AC5B;">IRRESISTIBLE TASTE EXPERIENCE</h1>
+            <p class="" style="width: 280px;font-weight: 400;">The beauty of gold, care and infinite attention for quality ingredients.</p>
+            <button class="button" style="color:rgb(117, 59, 46);font-weight: 700;letter-spacing: 2px;background-color: #D5AC5B;width: 170px;height: 60px;border: none;">DISCOVER</button>
+          </div>
+          <div class="gif w-50">
+            <img src="img/home gif.gif" alt="" style="height: 100%;width: 100%;transform: scale(1.2);">
+          </div>
+          </div>
+      </div>
+      <div class="gif d-block d-lg-none d-xl-none d-xxl-none position-relative" style="height: 500px;">
+        <img src="img/mobole gif.jpeg" alt="" style="height: 100%;width: 100%;">
+        <div class="text text-center position-absolute" style="top: 110px;color: rgb(117, 59, 46);">
+          <h2 style="font-size: 6rem;">↕</h2>
+        <h1 class="h w-50 mx-auto fw-bold" style="color: #D5AC5B;">IRRESISTIBLE TASTE EXPERIENCE</h1>
+        <p class="text-light ms-4 me-4 fs-5" style="font-family: Arial, Helvetica, sans-serif;">
+          The beauty of gold, care and infinite attention for quality ingredients.
+          </p>
+          <button style="background-color: #D5AC5B; width: 50%; height: 50px;border: none; font-weight: 700 ;
+          color: rgb(117, 59, 46);">DISCOVER</button>
+      </div>
+      </div>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style="width: 70%;">
+  <div class="offcanvas-header">
+    <img src="img/logopng.png" alt="" class="" style="width: 80px;">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul style="list-style: none;margin-left: -30px; color: rgb(117, 59, 46);font-weight: 600;">
+      <li class="list9" style="margin-top: 20px;text-decoration: underline;text-decoration-color: #D5AC5B;text-decoration-thickness: 3px;">OUR PRODUCTS →</li>
+      <li class="list9" style="margin-top: 20px;text-decoration: underline;text-decoration-color: #D5AC5B;text-decoration-thickness: 3px;">TIPS & IDEAS →</li>
+      <li class="list9" style="margin-top: 20px;text-decoration: underline;text-decoration-color: #D5AC5B;text-decoration-thickness: 3px;">ABOUT FERRERO ROCHER →</li>
+      <li class="list9" style="margin-top: 20px;text-decoration: underline;text-decoration-color: #D5AC5B;text-decoration-thickness: 3px;">QUALITY & SUBSTAINABILITY →</li>
+
+    </ul>
+  </div>
+</div>
+<div class="container-fluid mt-2 p-5 d-none d-lg-block d-xl-block d-xxl-block mt-5" style="height: 75vh;background-color: #f3eddb;box-shadow: 2px 2px 12px 12px rgba(117, 59, 46, 0.55);"  data-aos="zoom-in">
+  <div class="container h-100 d-flex " style="border: 2px solid #D5AC5B;font-weight: 500 !important;">
+  <div class="gif w-50">
+    <img src="img/experience-gfx.png" alt="" style="height: 100%;width: 100%;transform: scale(1.2);">
+  </div>
+      <div class="text w-50  pt-3" style="z-index: 2;padding-left: 70px;">
+        <p class="" style="font-size: 1.2rem;letter-spacing: 2px;color: #D5AC5B;">DISCOVER</p>
+    <h1 class="w-50 h" style="font-size: 3.8rem;color:rgb(117, 59, 46)">FERRERO ROCHER EXPERIENCE</h1>
+    <button class="button" style="color:rgb(117, 59, 46);font-weight: 700;letter-spacing: 2px;background-color: #D5AC5B;width: 170px;height: 60px;border: none;">DISCOVER</button>
+  </div>
+  </div>
+</div>
+      <div class="container-fluid text-center d-flex justify-content-center align-items-center">
+        <div class="text mt-5 container">
+        <h1 style="font-size: 5rem;color: #D5AC5B;"  data-aos="fade-up"
+        data-aos-duration="3000">↕</h1>
+        <h3 class="mt-5 fs-4" style="color:#D5AC5B;" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">DISCOVER OUR</h3>
+        <h1 class="h" style="font-size: 3.6rem;color: rgb(117, 59, 46);" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">PRODUCTS</h1>
+        <div class="cantainer p-lg-5 p-xl-5 p-xxl-5 p-3 d-flex justify-content-between flex-wrap" style="">
+          <div class="card position-relative " data-aos="flip-left" style="width: 290px; height: 400px; border-top: 2px solid #D5AC5B !important; border-left: 2px solid #D5AC5B !important; border-right: 2px solid #D5AC5B !important;background: none;margin-top: 70px ;margin-bottom: 50px;" >
+            <img src="img/1-pralines-gfx.png" alt="" style="height: 55%;transform: scale(1.1);z-index: -1;">
+            <h3 class="h mx-auto my-auto fer" style="width: 60%;">FERRERO ROCHER</h3>
+            <button class="button mx-auto" style="width: 70%;height: 60px;margin-bottom: -30px;border: none;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 700;box-shadow: 2px 2px 5px 5px rgba(117, 59, 46, 0.237);">DIOSCOVER</button>
+          </div>
+          <div class="card position-relative " data-aos="flip-up" style="width: 290px; height: 400px; border-top: 2px solid #D5AC5B !important; border-left: 2px solid #D5AC5B !important; border-right: 2px solid #D5AC5B !important;background: none;margin-top: 70px ;margin-bottom: 50px;" >
+            <img src="img/vday_-carousel_pc.png" alt="" style="height: 55%;transform: scale(1.1);z-index: -1;">
+            <h3 class="h mx-auto my-auto fer" style="width: 80%;">VALENTINE'S DAY SPECIAL</h3>
+            <button class="button mx-auto" style="width: 70%;height: 60px;margin-bottom: -30px;border: none;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 700;box-shadow: 2px 2px 5px 5px rgba(117, 59, 46, 0.237);">DIOSCOVER</button>
+          </div>
+          <div class="card position-relative " data-aos="flip-right" style="width: 290px; height: 400px; border-top: 2px solid #D5AC5B !important; border-left: 2px solid #D5AC5B !important; border-right: 2px solid #D5AC5B !important;background: none;margin-top: 70px ;margin-bottom: 50px;" >
+            <img src="img/ferrero_rocher_easter_carousel_pc.png" alt="" style="height: 55%;transform: scale(1.1);z-index: -1;">
+            <h3 class="h mx-auto my-auto fer" style="width: 80%;">EASTER SPECIAL</h3>
+            <button class="button mx-auto" style="width: 70%;height: 60px;margin-bottom: -30px;border: none;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 700;box-shadow: 2px 2px 5px 5px rgba(117, 59, 46, 0.237);">DIOSCOVER</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="mx-auto p-4 d-none d-lg-block d-xl-block d-xxl-block" style="height: 90vh;border: 5px solid #D5AC5B;width: 80%;" data-aos="zoom-in-right">
+        <div class="w-100 h-100 d-flex" style="background-image: url(img/wood-pattern_x2.png);background-repeat: no-repeat;background-size: cover;background-position: center;border: 1px groove #F8F2E7;background-color: #FAF8F2;">
+          <div class="" style="width: 60%;">
+            <div class="text ps-5 d-flex flex-column justify-content-center h-100">
+              <p class="fs-5" style="letter-spacing: 3px;color: #D5AC5B;font-weight: 600;">LEARN MORE ABOUT</p>
+              <p class="h" style="font-size: 3.4rem;line-height: 60px;color: rgb(117, 59, 46);margin-top: -10px !important;">QUALITY & SUSTAINABILITY</p>
+              <button class="button border-0 mt-5" style="width: 230px;height: 60px;background-color: #D5AC5B; color: rgb(117, 59, 46);font-weight: 700;box-shadow: 2px 2px 5px 5px rgba(117, 59, 46, 0.325) !important;">DISCOVER</button>
+            </div>
+        </div>
+        <div class=" d-flex align-items-center" style="width: 40%;">
+          <img data-aos="fade-left" src="img/qs_home_1.jpg" alt="" class="ms-3" style="width: 520px;box-shadow: 2px 2px 10px 10px #d5ac5b94;">
+        </div>
+      </div>
+      </div>
+      <div class="before d-block d-lg-none d-xl-none d-xxl-none border w-100 position-relative mt-5" style="height: 90vh;background-image: url(img/qs_home_1.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;border-image: fill 0 linear-gradient(#0003,#000);">
+        <div class="text text-center h-100 d-flex flex-column align-items-center justify-content-end position-relative" style="z-index: 2;margin-top: -50px;">
+          <p class="fs-5" style="letter-spacing: 2px;font-weight: 600;color: #D5AC5B;">LEARN MORE ABOUT</p>
+          <h1 class="h" style="color: #D5AC5B;font-weight: 500 !important;">QUALITY & SUSTAINABILITY</h1>
+          <button class="button border-0 mt-5" style="background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 700;width: 60%;height: 60px;">DISCOVER</button>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="text mt-5 container">
+        <h1 style="font-size: 5rem;color: #D5AC5B;"  data-aos="fade-up"
+        data-aos-duration="3000">↕</h1>
+        <h3 class="mt-5 fs-4" style="color:#D5AC5B;"data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">GET INSPIRED</h3>
+        <h1 class="h" style="font-size: 3.6rem;color: rgb(117, 59, 46);"data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">TIPS AND IDEAS</h1>
+      </div>
+        <div class="cantainer-fluid p-lg-5 p-xl-5 p-xxl-5 p-3 d-flex justify-content-between flex-wrap text-center" style="">
+          <div class="position-relative main mt-5" style="width: 290px;height: 350px;"  data-aos="zoom-in-down">
+            <div class="w-100 h-100 p-3 d-flex align-items-end" style="background-image: url(img/ti-menu-large.jpg);background-repeat: no-repeat;background-size: cover;">
+              <h1 class="h mt-auto fs-4 text-start heading">Ferrero Rocher Orange Cupcakes</h1>
+            </div>
+            <div class="overlay position-absolute w-100 bottom-0 p-3 text-start h-100" style="background-color: #ffffffe0;opacity: 0;">
+              <h1 class="fs-4 h text-start" style="color: rgb(117, 59, 46);">Ferrero Rocher Orange Cupcakes</h1>
+              <button class="button border-0" style="width: 80px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Recipes</button>
+              <p class="mt-3 fs-5" style="color: rgb(117, 59, 46);font-weight: 500 !important;">Duration : 50 min
+                <br>
+                Servings : 8 Person 
+                <br>
+                Level : Easy
+              </p>
+              <div class="button mx-auto border-0 d-flex align-items-center justify-content-center mt-5" style="width: 80%;height: 60px;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 600;">SEE MORE</div>
+            </div>
+          </div>
+          <div class="position-relative main mt-5" style="width: 290px;height: 350px;"  data-aos="zoom-in-down">
+            <div class="w-100 h-100 p-3 d-flex align-items-end" style="background-image: url(img/ferrero_rocher_easter_carousel_pc.png);background-repeat: no-repeat;background-size: cover;">
+              <h1 class="h mt-auto fs-4 text-start heading">Ferrero Rocher Napkin Ring</h1>
+            </div>
+            <div class="overlay position-absolute w-100 bottom-0 p-3 text-start h-100" style="background-color: #ffffffe0;opacity: 0;">
+              <h1 class="fs-4 h text-start" style="color: rgb(117, 59, 46);">Ferrero Rocher Napkin Ring</h1>
+              <button class="button border-0" style="width: 60px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Easter</button>
+              <button class="button border-0" style="width: 120px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Decorations</button>
+              <p class="mt-3 fs-5" style="color: rgb(117, 59, 46);font-weight: 500 !important;">Duration : 5 min
+                <br>
+                Servings : 1 Person 
+                <br>
+                Level : Easy
+              </p>
+              <div class="button mx-auto border-0 d-flex align-items-center justify-content-center mt-5" style="width: 80%;height: 60px;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 600;">SEE MORE</div>
+            </div>
+          </div>
+          <div class="position-relative main mt-5" style="width: 290px;height: 350px;"  data-aos="zoom-in-down">
+            <div class="w-100 h-100 p-3 d-flex align-items-end" style="background-image: url(img/vday_-carousel_pc.png);background-repeat: no-repeat;background-size: cover;">
+              <h1 class="h mt-auto fs-4 text-start heading">Ferrero Rocher Chocalate Heart</h1>
+            </div>
+            <div class="overlay position-absolute w-100 bottom-0 p-3 text-start h-100" style="background-color: #ffffffe0;opacity: 0;">
+              <h1 class="fs-4 h text-start" style="color: rgb(117, 59, 46);">Ferrero Rocher Chocalate Heart</h1>
+              <button class="button border-0" style="width: 150px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Valentine's Day</button>
+              <button class="button border-0" style="width: 80px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Recipes</button>
+              <p class="mt-3 fs-5" style="color: rgb(117, 59, 46);font-weight: 500 !important;">Duration : 50 min
+                <br>
+                Servings : 2 Person 
+                <br>
+                Level : Medium
+              </p>
+              <div class="button mx-auto border-0 d-flex align-items-center justify-content-center mt-5" style="width: 80%;height: 60px;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 600;">SEE MORE</div>
+            </div>
+          </div>
+          <div class="position-relative main mt-5" style="width: 290px;height: 350px;"  data-aos="zoom-in-down">
+            <div class="w-100 h-100 p-3 d-flex align-items-end" style="background-image: url(img/christmas-special-homepage_carousel.jpeg);background-repeat: no-repeat;background-size: cover;">
+              <h1 class="h mt-auto fs-4 text-start heading">Golden Ferrero Rocher Star</h1>
+            </div>
+            <div class="overlay position-absolute w-100 bottom-0 p-3 text-start h-100" style="background-color: #ffffffe0;opacity: 0;">
+              <h1 class="fs-4 h text-start" style="color: rgb(117, 59, 46);">Golden Ferrero Rocher Star</h1>
+              <button class="button border-0" style="width: 110px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Christmas</button>
+              <button class="button border-0" style="width: 120px;height: 30px;border: 1px groove rgb(117, 59, 46) !important;background-color: white;color: rgb(117, 59, 46);">Decorations</button>
+              <p class="mt-3 fs-5" style="color: rgb(117, 59, 46);font-weight: 500 !important;">Duration : 60 min
+                <br>
+                Servings : 12 Person 
+                <br>
+                Level : Hard
+              </p>
+              <div class="button mx-auto border-0 d-flex align-items-center justify-content-center mt-5" style="width: 80%;height: 60px;background-color: #D5AC5B;color: rgb(117, 59, 46);font-weight: 600;">SEE MORE</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      <div class="container-fluid text-center mb-5">
+        <div class="text mt-5 container">
+        <h1 style="font-size: 5rem;color: #D5AC5B;" data-aos="fade-up"
+        data-aos-duration="3000">↕</h1>
+        <h3 class="mt-5 fs-4 text-uppercase" style="color:#D5AC5B;" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">Follow Us on</h3>
+        <h1 class="h text-uppercase" style="font-size: 3.6rem;color: rgb(117, 59, 46);" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">Social Media</h1>
+      </div>
+      <div class="container d-flex mt-5 justify-content-around flex-wrap">
+        <div class="bg-white p-2 position-relative mt-5 mt-lg-1 mt-xl-1 mt-xxl-1 page" style="width: 300px;height: 320px;border: 1px solid #D5AC5B !important; border-radius: 20px;" data-aos="flip-up">
+          <img src="img/christmas-special-homepage_carousel.jpeg" alt="" class="w-100 h-100" style="border-radius: 20px;">
+          <div class="position-absolute p-2 bg-white" style="border-radius: 12px;top: 8px;left: 8px;">
+            <img src="img/fb_1.svg" alt="" class="w-100 h-100" style="border-radius: 12px;">
+          </div>
+        </div>
+        <div class="bg-white p-2 position-relative mt-5 mt-lg-1 mt-xl-1 mt-xxl-1 page" style="width: 330px;height: 380px;border: 1px solid #D5AC5B !important; border-radius: 20px;" data-aos="flip-up">
+          <img src="img/travel-carousel.jpg" alt="" class="w-100 h-100" style="border-radius: 20px;">
+          <div class="position-absolute p-2 bg-white" style="border-radius: 12px;top: 8px;left: 8px;">
+            <img src="img/fb_1.svg" alt="" class="w-100 h-100" style="border-radius: 12px;">
+          </div>
+        </div>
+        <div class="bg-white p-2 position-relative mt-5 mt-lg-1 mt-xl-1 mt-xxl-1 page" style="width: 300px;height: 320px;border: 1px solid #D5AC5B !important; border-radius: 20px;" data-aos="flip-up">
+          <img src="img/experience-gfx.png" alt="" class="w-100 h-100" style="border-radius: 20px;">
+          <div class="position-absolute p-2 bg-white" style="border-radius: 12px;top: 8px;left: 8px;">
+            <img src="img/fb_1.svg" alt="" class="w-100 h-100" style="border-radius: 12px;">
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="cantainer-fluid border mt-5 position-relative" style="background-color: rgb(72, 31, 21);" data-aos="zoom-in-up">
+        <div class="position-absolute mx-auto fs-1 text-center w-100 d-none d-lg-block d-xl-block d-xxl-block" style="color: #D5AC5B;top: -30px;">⬢</div>
+        <figure class="text-center mx-auto" style="width: 300px;"><img src="img/gif3.gif" alt=""><figcaption class="h fs-4" style="color: #D5AC5B;margin-top: -50px;">FERRERO ROCHER</figcaption></figure>
+        <div class="container position-relative mt-3 d-none d-lg-block d-xl-block d-xxl-block" style="border-top: 1px solid #D5AC5B;"><span class="position-absolute fs-5" style="color: #D5AC5B;top: -17px;left: -6px;">⬢</span>
+          <span class="position-absolute fs-5" style="color: #D5AC5B;top: -17px;right: -6px;">⬢</span></div>
+      <div class="container d-flex mt-5 justify-content-around ps-5 pe-5 flex-wrap d-none d-lg-flex d-xl-flex d-xxl-flex">
+        <div class="p-2 ps-5 pe-5" style="width: 280px; height: 280px;">
+          <h1 class="h fs-4" style="color: #D5AC5B;">OUR PRODUCTS</h1>
+          <hr style="color: #D5AC5B;">
+          <ul style="list-style: none;">
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Ferrero Rocher</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Chocalate Bars</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Ferrero Rocher Origins</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Ice Cream</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Travel Companions</li>
+          </ul>
+        </div>
+        <div class="p-2 ps-5 pe-5" style="width: 280px; height: 280px;">
+          <h1 class="h fs-4" style="color: #D5AC5B;">HAVE A QUESTIONS ?</h1>
+          <hr style="color: #D5AC5B;">
+          <ul style="list-style: none;">
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Frequently Asked Questions</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Contact Us</li>
+            </ul>
+        </div>
+        <div class="p-2 ps-5 pe-5" style="width: 280px; height: 280px;">
+          <h1 class="h fs-4" style="color: #D5AC5B;">INFORMATION</h1>
+          <hr style="color: #D5AC5B;">
+          <ul style="list-style: none;">
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Technical Requirements</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Privacy Policy</li>
+            <li class="mt-2 list" style=" color: white;font-weight: 600;margin-left: -30px;">Cookie Policy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
